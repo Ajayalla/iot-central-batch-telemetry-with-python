@@ -46,6 +46,7 @@ def iothub_client_telemetry_sample_run():
             # Send the message.
             print( "Sending message: {}".format(message) )
             client.send_message(message)
+            time.sleep(120)
             print ( "Message successfully sent" )
             time.sleep(3)
 
